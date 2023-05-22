@@ -103,7 +103,7 @@ int main()
                             if(buf[i] != ' '){
                                 strncpy(buf, buf + 0, i);
                                 break;
-                        }
+                            }
                         }
                         ret = send(fds[i].fd, buf, strlen(buf), 0);
                         ret = recv(fds[i].fd, buf, sizeof(buf), 0);
